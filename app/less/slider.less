@@ -1,0 +1,143 @@
+.slider{
+	background-color: #fff;
+	overflow: hidden;
+	font-family: @fontRoboto;
+	.slider__item{
+		position: relative;
+		background-size: cover;
+		padding: 8% 0;
+		&:before{
+			content: "";
+			border: 5px solid #fff;
+			background-color: transparent;
+			margin: 0 auto;
+			top: 2%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 98%;
+			height: 96%;
+			position: absolute;
+			z-index: 0;
+		}
+	}
+	.slider__crumbs{
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 300;
+		font-style: italic;
+		strong{
+			font-style: normal;
+		}
+	}
+	h2{
+		font-size: 36px;
+		font-weight: 100;
+		text-transform: uppercase;
+		color: #fff;
+		margin: 50px 0 30px;
+	}
+	.slider__desc{
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 100;
+		margin-bottom: 80px;
+	}
+
+	.owl-nav {
+		text-align: center;
+		-webkit-tap-highlight-color: transparent; 
+		margin: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		height: 20%;
+		.owl-next{
+			position: absolute;
+			right: 0px;
+		}
+		.owl-prev{
+			position: absolute;
+			left: 0px;
+		}
+	}
+	.owl-dots {
+		text-align: center;
+		-webkit-tap-highlight-color: transparent;
+		position: absolute;
+		bottom: 30px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.owl-dots .owl-dot {
+		display: inline-block;
+		zoom: 1;
+		*display: inline; 
+	}
+	.owl-dots .owl-dot span {
+		width: 10px;
+		height: 10px;
+		margin: 5px 7px;
+		background: #fff;
+		display: block;
+		-webkit-backface-visibility: visible;
+		transition: opacity 200ms ease;
+		border-radius: 30px; 
+	}
+	.owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+		background: transparent;
+		box-shadow: 0px 0px 0px 3px #fff;
+	}
+
+	.nav-slit .icon-wrap {
+		position: relative;
+		display: block;
+		background-color: #0000008f;
+		padding: 160% 5px;
+	}
+	.nav-slit > div a.next .icon-wrap {
+		margin-right: 0;
+	}
+	.nav-slit > div a.prev .icon-wrap {
+		margin-left: 0;
+	}
+
+	.nav-slit svg {
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.nav-slit svg.iconArr {
+		-webkit-transition: -webkit-transform 0.1s 0.1s;
+		transition: transform 0.1s 0.1s;
+		fill: #fff;
+	}
+
+	.nav-slit > div div {
+		position: absolute;
+		top: 0;
+		width: 200px;
+		height: 70%;
+		background-color: #939a9f;
+		-webkit-perspective: 1000px;
+		perspective: 1000px;
+	}
+
+	.nav-slit > div a.prev div {
+		left: 0;
+		text-align: left;
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+
+	.nav-slit > div a.next div {
+		right: 0;
+		text-align: right;
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+	}	
+}
